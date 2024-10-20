@@ -4,6 +4,11 @@
 using constructor;
 
 Baby firstBaby = new Baby(); //Default Constructor.
+firstBaby.name = "Daisy";
+firstBaby.lastname = "Petty";
+Console.WriteLine(firstBaby.name + firstBaby.lastname + firstBaby.birthDate + " is born");
 
-Baby secondBaby = new Baby(); //Alternative Constructor.
-Console.WriteLine("Baby name is: " + secondBaby.name + "\nBaby lastname is: " + secondBaby.lastname + "\nBaby birthdate is: " + "\nIngaaaaaaaaa " + secondBaby.birthDate);
+Baby secondBaby = new Baby("Daisy", "Petty"); //Alternative Constructor.
+Console.Write(secondBaby.name + secondBaby.lastname + secondBaby.birthDate + " is born");
+
+

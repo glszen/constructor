@@ -12,17 +12,25 @@ namespace constructor
         public string lastname;
         public DateTime birthDate;
 
+        public string Name { get { return name; } set { name = value; } }
+
+        public string LastName { get { return lastname; } set { lastname = value; } }
+
+        public DateTime BirthDate { get { return birthDate; } set { birthDate = value; } }
+
 
         public Baby() //Default Constructor.
         {
-            Console.WriteLine("Baby name is: Daisy " + "\nBaby lastname is: Pays " + "\nBaby birthdate is: " + "\nIngaaaaaaaaa " + DateTime.Now);
+            birthDate = DateTime.Now;
+            Console.WriteLine("Ingaaaaaaaaa ");
         }
 
-        public Baby() //Alternative Constructor.
+        public Baby(string name, string lastname) //Alternative Constructor.
         {
-            name = "Daisy";
-            lastname = "Pays";
-            birthDate = DateTime.Now;
+            Name = name;
+            LastName = lastname;
+            BirthDate = DateTime.Now;
+            Console.WriteLine("Ingaaaaaa ");
         }
 
     }
